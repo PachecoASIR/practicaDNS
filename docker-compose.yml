@@ -5,7 +5,8 @@ services:
    ports:
      - 53:53
    networks:
-     - br02
+      br02:
+        ipv4_address: 10.1.0.4
    volumes:
      - conf2:/etc/bind
  asir_cliente:
@@ -15,7 +16,7 @@ services:
    stdin_open: true  # docker run -i
    tty: true         # docker run -t
    dns:
-     - 172.19.0.3
+     - 10.1.0.4
 volumes:
  conf2:
 
