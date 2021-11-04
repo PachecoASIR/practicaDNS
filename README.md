@@ -27,16 +27,8 @@ $TTL    604800
 @       IN      A       192.168.1.10
 @       IN      AAAA    ::1
 pchek0      IN      A       172.22.0.2
+
 7. Reiniciamos nuestros servicios y comprobamos que funcione.
-
-
-PASOS DIR .git
-
-$git status
-$git add named.conf.option
-$git status
-$git commit -m “forwarders actualizados”
-$git push origin (origin es el repositorio remoto) master (master es la branch/rama)
 
 Resolv.conf (cliente)
 
