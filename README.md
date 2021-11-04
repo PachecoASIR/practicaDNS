@@ -16,7 +16,7 @@ zone "example.com" { <br>
     file "/etc/bind/db.example.com"; <br>
 };
 
-6. Creamos el fichero db.example.com y lo configuramos (cambiamos IP y nombre):
+6. Creamos el fichero db.example.com y lo configuramos (cambiamos IP y nombre): <br>
 ; <br> 
 ; BIND data file for example.com <br>
 ; <br>
