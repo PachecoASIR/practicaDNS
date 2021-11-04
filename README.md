@@ -4,7 +4,12 @@ PRÁCTICA DNS
 2. Instalar gitlens
 3. Publish to github
 4. Modificamos el named.conf.options y dentro del mismo los fowarders
-5. Para el Primary Server abrimos el named.conf.local (volumen conf) y añadimos una nueva zona:
+forwarders {
+	 	8.8.8.8;
+		8.8.4.4;
+	 };
+
+6. Para el Primary Server abrimos el named.conf.local (volumen conf) y añadimos una nueva zona:
 
 zone "example.com" {
     type master;
