@@ -7,13 +7,21 @@ PRÁCTICA DNS
 5. Para el Primary Server abrimos el named.conf.local (volumen conf) y añadimos una nueva zona:
 
 zone "example.com" { 
+
     type master; 
+    
     file "/etc/bind/db.example.com"; 
+    
 };
+
 6. Creamos el fichero db.example.com y lo configuramos (cambiamos IP y nombre):
+
 ;
+
 ; BIND data file for example.com
+
 ;
+
 $TTL    604800
 @       IN      SOA     example.com. root.example.com. (
                               2         ; Serial
