@@ -4,16 +4,16 @@ PRÁCTICA DNS
 2. Instalar gitlens
 3. Publish to github
 4. Modificamos el named.conf.options y dentro del mismo los fowarders
-forwarders {
-	 	8.8.8.8;
-		8.8.4.4;
-	 };
+forwarders { <br>
+	 	8.8.8.8; <br>
+		8.8.4.4; <br>
+	 }; <br>
 
 6. Para el Primary Server abrimos el named.conf.local (volumen conf) y añadimos una nueva zona:
 
-zone "example.com" {
-    type master;
-    file "/etc/bind/db.example.com";
+zone "example.com" { <br>
+    type master; <br>
+    file "/etc/bind/db.example.com"; <br>
 };
 
 6. Creamos el fichero db.example.com y lo configuramos (cambiamos IP y nombre):
