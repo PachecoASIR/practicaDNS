@@ -29,7 +29,7 @@ $TTL    604800 <br>
                          604800 )       ; Negative Cache TTL <br>
 
 @       IN      NS      pchek0.example.com. <br>
-@       IN      A       192.168.1.10 <br>
+@       IN      A       10.1.0.4 <br>
 @       IN      AAAA    ::1 <br>
 pchek0      IN      A       172.22.0.2
 
